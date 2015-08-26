@@ -1,0 +1,26 @@
+{
+  "name": "interceptor.Ninja.JS",
+  "version": "0.0.0",
+  "authors": [
+    "Cleber de Moraes Goncalves <cleber.programmer@hotmail.com>"
+  ],
+  "description": "Agrupa todos os interceptors em uma onrdem pre definida para manipular o objeto xhr do servico $http nos processo de request e response",
+  "main": "interceptor.js",
+  "keywords": [
+    "javascript"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Bibizzy/interceptor.Ninja.JS",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Ninja.JS": "*",
+    "curry.Ninja.JS": "*",
+    "reduce.Ninja.JS": "*"
+  }
+}

@@ -12,7 +12,7 @@
  *        $interceptor('request', xhr);
  *
  */
-Ninja.module('$interceptor', ['$curry', '$reduce'], function ($curry, $reduce) {
+this.Ninja.module('$interceptor', ['$curry', '$reduce'], function ($curry, $reduce) {
   
   /**
    * Hash de interceptors em uma orderm definica que tem
