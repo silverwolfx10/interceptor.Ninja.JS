@@ -62,6 +62,29 @@ this.Ninja.module('$interceptor', ['$curry', '$reduce'], function ($curry, $redu
    * Revelacao do servico $interceptor, encapsulando a visibilidade das funcoes
    * privadas
    */
-  return $curry(interceptor);
+  return (function (constructor) {
+    
+    /**
+     * Registra interceptors para serem executados
+     * 
+     * @static
+     * @method push
+     * @param {Object} a Interceptors
+     * @example
+     * 
+     *        $interceptor.push($errorAlert);
+     *
+     */
+    constructor.push = function (a) {
+      interceptors.push(a);
+    };
+    
+    /**
+     * Retorna o construtor interceptor a funcao curry com
+     * a funcao statica push
+     */
+    return constructor;
+    
+  })($curry(interceptor));
   
 });
