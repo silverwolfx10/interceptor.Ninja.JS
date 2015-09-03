@@ -55,7 +55,7 @@ this.Ninja.module('$interceptor', ['$curry', '$reduce'], function ($curry, $redu
    *
    */
   function interceptor(method, xhr) {
-    return $reduce(interceptors, xhr, $curry(transform)(method, xhr));
+    return $reduce(interceptors, xhr, $curry(transform)(method));
   }
   
   /**
